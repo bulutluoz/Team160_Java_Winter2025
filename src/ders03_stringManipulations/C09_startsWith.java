@@ -21,9 +21,6 @@ public class C09_startsWith {
         System.out.println(str.startsWith("Java")); // true
 
 
-        //"Java gun gectikce guzellesiyor"
-
-
         System.out.println(str.contains("gun")); // true
 
         System.out.println(str.equals("gun")); // false
@@ -31,11 +28,24 @@ public class C09_startsWith {
         System.out.println(str.startsWith("gun")); // false
 
 
-        System.out.println("=============");
-
         System.out.println(str.startsWith("")); // true
         System.out.println(str.startsWith("Java gun gectikce guzellesiyor")); // true
 
+        System.out.println("=============");
+        //"Java gun gectikce guzellesiyor"
+
+        System.out.println(str.startsWith("gun", 5));  // true
+
+        /*
+            2 parametre girdigimizde
+            2.parametre aramaya nereden baslayacagimizi soyler
+            yani aslinda 37.satir su anlama gelir
+            "gun gectikce guzellesiyor"  metni "gun" ile mi basliyor ? sorusunu sorar
+         */
+
+        System.out.println(str.startsWith(" ",8)); // " gectikce guzellesiyor" ==> true
+
+        System.out.println(str.startsWith("a", 10)); // "ectikce guzellesiyor" ==> false
 
 
 
