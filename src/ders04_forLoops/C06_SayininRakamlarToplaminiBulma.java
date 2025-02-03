@@ -14,14 +14,35 @@ public class C06_SayininRakamlarToplaminiBulma {
 
         System.out.println("Rakamlar toplamini bulmak icin pozitif bir tamsayi giriniz...");
 
-        int sayi = scanner.nextInt();
+        int girilenSayi = scanner.nextInt();
+
+        int sayi = girilenSayi;
+        // sayi variable'i loop icerisinde surekli 10'a bolunerek
+        // 0 oluncaya kadar islem devam ediyor
+        // Kullanicinin girdigi degeri bu sekilde yok etmek dogru bir yontem olmaz
+        // Kullanicinin girdigi degeri korumak icin
+        // islem icerisinde kullanacagimiz ve degeri kullanicinin girdigi degere esit olan
+        // sayi variable'i olusturduk.
+
+
+
 
         int basamakSayisi = (sayi+"").length();
 
         int birlerBasamagi = 0;
         int rakamlarToplami = 0 ;
 
+        for (int i = 1; i <=basamakSayisi ; i++) {
 
+            birlerBasamagi = sayi % 10;
+
+            rakamlarToplami += birlerBasamagi;
+
+            sayi /= 10;
+
+        }
+
+        System.out.println("Girilen " + girilenSayi + " sayisinin rakamlar toplami : " + rakamlarToplami);
 
 
 
