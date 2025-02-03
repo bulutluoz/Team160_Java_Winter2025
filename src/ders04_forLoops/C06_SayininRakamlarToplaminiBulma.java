@@ -24,9 +24,6 @@ public class C06_SayininRakamlarToplaminiBulma {
         // islem icerisinde kullanacagimiz ve degeri kullanicinin girdigi degere esit olan
         // sayi variable'i olusturduk.
 
-
-
-
         int basamakSayisi = (sayi+"").length();
 
         int birlerBasamagi = 0;
