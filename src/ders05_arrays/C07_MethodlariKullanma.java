@@ -1,5 +1,7 @@
 package ders05_arrays;
 
+import java.util.Arrays;
+
 public class C07_MethodlariKullanma {
 
     public static void main(String[] args) {
@@ -26,6 +28,13 @@ public class C07_MethodlariKullanma {
         //En kisa kelime : Sony
         //En uzun kelime : Samsung
 
+
+        // sayilar array'ine 7 ve 9 degerlerini ekleyin {2,4,6,-9,-5,-2};
+
+        sayilar = C10_ArrayeElemnEkleme.arrayeElemanEkle(sayilar,7);
+        sayilar = C10_ArrayeElemnEkleme.arrayeElemanEkle(sayilar,9);
+
+        System.out.println(Arrays.toString(sayilar)); // [2, 4, 6, -9, -5, -2, 7, 9]
 
 
 
