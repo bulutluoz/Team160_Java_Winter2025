@@ -17,5 +17,27 @@ public class C07_MethodlariKullanma {
         // Aradaginiz 4 sayisi array'de 1 adet kullanilmis
 
 
+
+
+        String[] sirketler = {"Sony","Amazon","Tesla","Apple","Samsung","Toyota"};
+
+        // sirket ismi en uzun ve en kisa olan sirket isimlerini yazdirin
+        C09_EnUzunEnKisaKelime.printEnKisaEnUzunKelime(sirketler);
+        //En kisa kelime : Sony
+        //En uzun kelime : Samsung
+
+
+
+
+
+
+
+
+
+
+
+
+
+
     }
 }
