@@ -20,7 +20,8 @@ public class C05_Runner {
         System.out.println(hemsire2.poliklinik); // Ortopedi
 
 
-        C04_Hemsire hemsire3 = new C04_Hemsire("Fatma","Can","Yildiz","5552343434","Goz");
+        C04_Hemsire hemsire3 =
+                new C04_Hemsire("Fatma","Can","Yildiz","5552343434","Goz");
 
 
 
