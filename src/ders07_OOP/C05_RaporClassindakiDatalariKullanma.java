@@ -15,6 +15,20 @@ public class C05_RaporClassindakiDatalariKullanma {
 //        System.out.println(obj.toplamSatisTutari);
 
 
+        obj.setSatisTutari(100);
+        obj.setSatisTutari(300);
+
+        // System.out.println(obj.setSatisTutari(500));
+        // Cannot resolve method 'println(void)'
+
+        obj.setSatisTutari(500);
+        obj.setSatisTutari(1000);
+
+
+        System.out.println(obj.getToplamSatisTutari());
+
+        // obj.getToplamSatisTutari() = 5000;
+
 
 
     }
