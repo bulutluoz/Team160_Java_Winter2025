@@ -7,6 +7,10 @@ public class C05_ChildOfAraba extends C04_KuralciArabaClass{
     // ya da parent edindigi abstract olan C04 class'indaki
     // fren, motor ve aku method'larini kendisine uyarlamali
 
+    // public abstract void deneme();
+    // Abstract method in non-abstract class
+    // abstract olmayan (concrete) bir class'da abstract method OLUSTURULAMAZ
+
     public void fren(){
 
     }

@@ -3,7 +3,7 @@ package ders08_abstraction;
 import java.util.ArrayList;
 import java.util.List;
 
-public class C06_AbstractListKullanimi {
+public class C07_AbstractListKullanimi {
 
 
 
