@@ -18,5 +18,19 @@ public class C05_HazirlananMethodlariKullanma {
         OgrenciMapClass.isimListesiYazdir("ali");
         // Ali Can 10
         // Ali Cem 11
+
+        // 10/K sinifindaki ogrencilerin
+        // numara isim ve soyisimlerini yazdirin
+
+        OgrenciMapClass.sinifSubeOgrenciListesiYazdirma("10","K");
+
+        //10 / K subesindeki ogrenci listesi
+        //102 Veli Cem
+        //106 Sevgi Can
+
+        OgrenciMapClass.sinifSubeOgrenciListesiYazdirma("11","K");
+
+        //11 / K subesindeki ogrenci listesi
+        //103 Ali Cem
     }
 }
