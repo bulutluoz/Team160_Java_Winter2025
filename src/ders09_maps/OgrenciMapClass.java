@@ -22,7 +22,6 @@ public class OgrenciMapClass {
 
     // ogrenci map'inde ismi arananIsim olan ogrencilerin
     // isim, soyisim ve sinif'larini liste olarak yazdiran bir method olusturun
-
     public static void isimListesiYazdir(String arananIsim){
 
         // 1.adim : tum key'leri elde edelim
@@ -61,7 +60,6 @@ public class OgrenciMapClass {
 
     // arananSinif ve arananSube sinifindaki ogrencilerin
     // numara, isim ve soyisimlerini liste olarak yazdirin
-
     public static void sinifSubeOgrenciListesiYazdirma(String arananSinif, String arananSube){
 
         // 1.adim : tum key'leri elde edelim
@@ -95,6 +93,43 @@ public class OgrenciMapClass {
                 System.out.println(eachKey + " " + eachValueArr[0] + " " + eachValueArr[1]);
             }
 
+
+        }
+
+    }
+
+    // verilen soyisme sahip ogrencilerin
+    // ogrenci No, sinif, sube ve isimlerini yazdirin
+    public static void soyisimdenOgrenciBulma(String arananSoyisim){
+
+        // 1.adim : tum key'leri elde edelim
+        Set<Integer> ogrenciKeySeti = ogrenciMap.keySet();  // [101, 102, 103, 104, 105, 106, 107]
+
+        // 2.adim : tum key'leri tek tek ele alip,
+        //          o key'e ait value'yu incelemek icin bir loop olusturalim
+
+        System.out.println("Soyadi "+arananSoyisim+" olan ogrenci listesi");
+
+        for (Integer eachKey: ogrenciKeySeti
+        ) {
+            // 3.adim :  eachKey bize tek tek herbir ogrenci numarasini getirir
+            //           bizim o ogrenci numarasina ait value'yu kaydetmemiz gerekir
+
+            String eachValue = ogrenciMap.get(eachKey); // "Ali-Can-10-H-MF"
+
+            // 4.adim : value'yu bir butun olarak kaydettik
+            //          ismi kontrol edebilmemiz icin once - ile split edip
+            //          bir array olarak kaydedebiliriz
+
+            String[] eachValueArr  = eachValue.split("-"); // [Ali, Can, 10, H, MF]
+
+            // 5.adim : ARTIK istenen islemi yapabiliriz
+            // soyismi Can olan ogrencilerin
+            // ogrenci No, sinif, sube ve isimlerini yazdirin
+
+            if (eachValueArr[1].equalsIgnoreCase(arananSoyisim)){
+                System.out.println(eachKey + " " + eachValueArr[2] + " " + eachValueArr[3] + " " + eachValueArr[0]);
+            }
 
         }
 

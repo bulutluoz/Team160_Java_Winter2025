@@ -32,5 +32,16 @@ public class C05_HazirlananMethodlariKullanma {
 
         //11 / K subesindeki ogrenci listesi
         //103 Ali Cem
+
+
+        // soyismi can olan ogrencilerin
+        // numara, sinif, sube ve isimlerini yazdirin
+        OgrenciMapClass.soyisimdenOgrenciBulma("can");
+        //Soyadi can olan ogrenci listesi
+        //101 10 H Ali
+        //104 10 H Ayse
+        //106 10 K Sevgi
+
+
     }
 }
