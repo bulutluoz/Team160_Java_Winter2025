@@ -200,9 +200,53 @@ public class C01_MapOlusturma {
 
         // map'den kayit silmek istersek
 
+        ogrenciMap.remove(102);
+        ogrenciMap.remove(104,"ali");
+        ogrenciMap.remove(105,"Sevgi-Cem-11-M-TM");
+        ogrenciMap.remove(120);
+
+        System.out.println(ogrenciMap);
+
+        /*
+
+            {
+                101=Nihan-Turna-11-K-TM,
+                103=Emin-Cem-12-K-TM,
+                104=Seher-Cem-11-K-TM,
+                106=Sevgi-Can-10-K-MF,
+                107=Esra-Han-11-M-SOZ,
+                110=Haydar-Turna-12-H-Say,
+                112=Ramazan-Yilmaz-11-K-TM
+               }
+         */
 
 
+        System.out.println(ogrenciMap.remove(101)); // Nihan-Turna-11-K-TM
+        System.out.println(ogrenciMap.remove(103, "Emin-Cem-12-K-TM")); // true
 
+        System.out.println(ogrenciMap.remove(130)); // null
+        System.out.println(ogrenciMap.remove(127, "a")); // false
+
+        System.out.println(ogrenciMap);
+
+        /*
+
+            {
+                104=Seher-Cem-11-K-TM,
+                106=Sevgi-Can-10-K-MF,
+                107=Esra-Han-11-M-SOZ,
+                110=Haydar-Turna-12-H-Say,
+                112=Ramazan-Yilmaz-11-K-TM
+               }
+         */
+
+
+        System.out.println(ogrenciMap.isEmpty()); // false
+
+
+        ogrenciMap.clear();
+
+        System.out.println(ogrenciMap); // {}
 
     }
 }
